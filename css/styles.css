@@ -1,0 +1,141 @@
+:root {
+    /* Couleur */
+    --neutral-0: #FFFFFF;
+    --neutral-200: #FFF7F0;
+    --neutral-400: #6A6662;
+    --neutral-900: #030303;
+    --Light-Red-500: #E16B5B;
+    --galactic-blue-500: #755CDE;
+    --summer-yellow-500: #F6A560;
+    --pink-500: #F39E9E;
+    --cyan-500: #61C4B7;
+    --dark-purple-500: #552049;
+
+    /* Famille */
+    --ff-base: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+    /* Graisses */
+    --fw-medium: 500;
+    --fw-bold: 700;
+
+    /* Tailles (base 16px) */
+    --fs-900: 3.5rem;    /* 56px */
+    --fs-800: 2.5rem;    /* 40px */
+    --fs-700: 1.5rem;    /* 24px */
+    --fs-600: 1.125rem;  /* 18px */
+    --fs-500: 1rem;      /* 16px */
+
+    /* Interlignes (sans unité) */
+    --lh-tight: 1.2;     /* 120% */
+    --lh-base: 1.3;      /* 130% */
+    --lh-loose: 1.5;     /* 150% */
+
+    /* Interlettrage */
+    --ls-0: 0px;
+  }
+body {
+    font-family:var(--ff-base);
+    background-color: var(--neutral-200);
+}
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.btn {
+    padding: 24px 12px 24px 16px;
+    border-radius: 999px;
+    background-color: var(--neutral-0);
+    border: 1px solid var(--neutral-900);
+    color: var(--neutral-900);
+    font-weight:700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.16px;
+}
+.btn-primary {
+    background-color: var(--neutral-900);
+    color: var(--neutral-200);
+    font-family: var(--ff-base)
+}
+.btn-primary:hover {
+    background-color: var(--galactic-blue-500);
+}
+.hero__title {
+    font-size: var(--fs-800);
+    line-height: var(--lh-tight);
+    text-align: center;
+    text-wrap: balance;
+}
+.hero__text {
+    color: var(--neutral-400);
+    font-size: var(--fs-600);
+    text-align: center;
+    text-wrap: balance;
+}
+.services {
+    margin-top: 40px;
+}
+.card {
+    display: flex;
+    align-items: flex-end;
+    border-radius: 8px;
+    height: 364px;
+    min-width: 159px;
+    background-repeat: no-repeat;
+    background-position: top 1.25rem right 1.25rem;
+}
+.card--graphic {
+    background-image: url("/assets/pattern-graphic-design.svg");
+    background-color:var(--galactic-blue-500);
+    
+}
+.card__title {
+    padding-top: 90px;
+    padding-left: 20px;
+    color:var(--neutral-0);
+    font-size:var(--fs-600);
+}
+.card--ui-ux-apps{
+    display: flex;
+    justify-content: space-between;
+    margin-top:1.25rem;
+    
+}
+.card--ui-ux {
+    background-image: url("/assets/pattern-ui-ux.svg");
+    background-color:var(--summer-yellow-500);
+    height: 182px;
+ 
+}
+.card--apps {
+    background-image: url("/assets/pattern-apps.svg");
+    background-color:var(--pink-500);
+    height: 182px;
+    
+}
+.card--illustrations {
+    margin-top:1.25rem;
+    background-image: url("/assets/pattern-illustrations.svg");
+    background-color:var(--Light-Red-500);
+    height: 182px;
+}
+.card--photography {
+    margin-top:1.25rem;
+    background-image: url("/assets/pattern-photography.svg");
+    background-color:var(--cyan-500);
+    height: 182px;
+  
+}
+.card--motion-graphics {
+    margin-top:1.25rem;
+    background-image: url("/assets/pattern-motion-graphics.svg");
+    background-color:var(--dark-purple-500);
+    height: 182px;
+
+}
