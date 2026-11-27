@@ -137,5 +137,22 @@ body {
     background-image: url("/assets/pattern-motion-graphics.svg");
     background-color:var(--dark-purple-500);
     height: 182px;
-
+}
+.about {
+    text-align: center;
+}
+.about__photo {
+    margin-top: 4rem;
+    width: 100%;
+}
+.btn-secondary {
+    background-color:var(--Light-Red-500);
+    color: var(--neutral-200);
+    border: none;
+    padding: 16px 48px;
+    font-size: var(--fs-500);
+    margin-top: 2rem;
+}
+.btn-secondary:hover {
+    background-color: var(--summer-yellow-500);
 }
